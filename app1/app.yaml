@@ -19,7 +19,7 @@ spec:
         app: hello
     spec:
       containers:
-      - image: wdalmut/app1:15
+      - image: wdalmut/app1:17
         name: hello-pod
         ports:
         - containerPort: 3000
