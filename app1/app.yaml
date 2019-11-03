@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello
+  namespace: quality
 spec:
   minReadySeconds: 10
   replicas: 10
@@ -23,3 +24,6 @@ spec:
         name: hello-pod
         ports:
         - containerPort: 3000
+        env:
+        - name: NODE_PORT
+          value: "3000"
